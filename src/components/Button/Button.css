@@ -1,121 +1,134 @@
 .Button {
-  color: #ffffff;
+	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
+	font-weight: 500;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
 }
 
 /* VARIANT */
 .Button-text {
-  color: #1565c0;
-  background-color: #fff;
-  border: none;
-  position: relative;
+	color: #1565c0;
+	background-color: #fff;
+	border: none;
+	position: relative;
 }
 .Button-text:hover {
-  background-color: #dcedff;
+	background-color: #dcedff;
 }
 .Button-text:disabled {
-  color: #cfcfcf;
-  cursor: no-drop;
+	color: #cfcfcf;
+	cursor: no-drop;
 }
 
 .Button-contained {
-  background-color: #1565c0;
-  border: none;
-  border-radius: 4px;
-  position: relative;
+	background-color: #1565c0;
+	border: none;
+	border-radius: 4px;
+	position: relative;
 }
 .Button-contained:hover {
-  background-color: #0059be;
+	background-color: #0059be;
 }
 .Button-contained:disabled {
-  color: #b1b1b1;
-  background-color: #e0e0e0;
-  cursor: no-drop;
+	color: #b1b1b1;
+	background-color: #e0e0e0;
+	cursor: no-drop;
 }
 
 .Button-outlined {
-  color: #1565c0;
-  background-color: #ffffff;
-  border: 1.5px solid #1565c0;
-  border-radius: 4px;
-  position: relative;
+	color: #1565c0;
+	background-color: #ffffff;
+	border: 1.5px solid #1565c0;
+	border-radius: 4px;
+	position: relative;
 }
 .Button-outlined:disabled {
-  color: #bdbdbd;
-  background-color: #ffffff;
-  border-color: #bdbdbd;
-  cursor: no-drop;
+	color: #bdbdbd;
+	background-color: #ffffff;
+	border-color: #bdbdbd;
+	cursor: no-drop;
 }
 
 /* SIZE */
 .Button-small {
-  padding: .3rem .9rem;
-  margin: .8rem;
-  font-size: 1.3rem;
+	padding: 0.3rem 0.9rem;
+	margin: 0.8rem;
+	font-size: 1.3rem;
 }
 .Button-medium {
-  padding: .6rem 1.6rem;
-  margin: .8rem;
-  font-size: 1.4rem;
+	padding: 0.6rem 1.6rem;
+	margin: 0.8rem;
+	font-size: 1.4rem;
 }
 .Button-large {
-  padding: .8rem 2.2rem;
-  margin: .8rem;
-  font-size: 1.5rem;
+	padding: 0.8rem 2.2rem;
+	margin: 0.8rem;
+	font-size: 1.5rem;
 }
 
 /* RIPPLE EFFECT */
 span {
-  border-radius: 50%;
-  opacity: .1;
+	border-radius: 50%;
+	opacity: 0.1;
 
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  animation: animate 1s linear infinite;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	animation: animate 1s linear infinite;
 }
 
 /* TYPES BUTTON */
 .Button-error {
-  color: #e99797;
-  background-color: #ffffff;
-  border-color: #e99797;
+	color: #e99797;
+	background-color: #ffffff;
+	border-color: #e99797;
 }
 .Button-error:hover {
-  color: #d32f2f;
-  background-color: #ffefef;
-  border-color: #d32f2f;
+	color: #d32f2f;
+	background-color: #ffefef;
+	border-color: #d32f2f;
 }
 
 .Button-success {
-  color: #ffffff;
-  background-color: #2e7d32;
-  border: none;
+	color: #ffffff;
+	background-color: #2e7d32;
+	border: none;
 }
 .Button-success:hover {
-  color: #ffefef;
-  background-color: #256d29;
+	color: #ffefef;
+	background-color: #256d29;
 }
 .Button-secondary {
-  color: #9c27b0;
-  background-color: #fff;
-  border: none;
+	color: #9c27b0;
+	background-color: #fff;
+	border: none;
 }
 .Button-secondary:hover {
-  background-color: #fbe1ff;
+	background-color: #fbe1ff;
 }
 
 @keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 350px;
-    height: 350px;
-  }
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+/* UPLOAD IMAGES */
+.input-upload {
+	width: full;
+	height: full;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	cursor: pointer;
 }
