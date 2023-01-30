@@ -1,1 +1,3 @@
 build
+// Inside your .eslintignore file
+!.storybook
