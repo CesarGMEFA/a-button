@@ -25,9 +25,6 @@
     "build-storybook": "build-storybook -s public",
     "lint": "eslint src",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
-    "lint:com": "lint --build src/components",
-    "lint:lay": "lint --build src/layouts",
-    "lint:pag": "lint --build src/pages",
     "format": "prettier --write src"
   },
   "eslintConfig": {
@@ -59,15 +56,15 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.15",
-    "@storybook/addon-essentials": "^6.5.15",
-    "@storybook/addon-interactions": "^6.5.15",
-    "@storybook/addon-links": "^6.5.15",
-    "@storybook/builder-webpack5": "^6.5.15",
-    "@storybook/manager-webpack5": "^6.5.15",
-    "@storybook/node-logger": "^6.5.15",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/node-logger": "^6.5.16",
     "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.15",
+    "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.49.0",

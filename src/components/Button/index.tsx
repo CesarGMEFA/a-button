@@ -27,7 +27,7 @@ export default function Button({
 	disabled = false,
 	color,
 	click,
-	upload
+	upload,
 }: Props): JSX.Element {
 	const [colorChecking, setColorChecking] = useState('');
 	const btn = useRef<HTMLButtonElement>(null);
@@ -61,7 +61,15 @@ export default function Button({
 				disabled={disabled}
 				onClick={click}
 			>
-				{(upload??false) && <input className='input-upload' data-testid="Upload images" accept="image/*" multiple type="file" />}
+				{(upload ?? false) && (
+					<input
+						className='input-upload'
+						data-testid='Upload images'
+						accept='image/*'
+						multiple
+						type='file'
+					/>
+				)}
 				{children}
 			</button>
 		</>

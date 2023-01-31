@@ -1,22 +1,23 @@
-import Button from "../../components/Button"
-import './ButtonsLayout.css'
+import Button from '../../components/Button';
+import './ButtonsLayout.css';
 
 function ButtonsLayout(): JSX.Element {
-
-  const handleClick = (): void => {
+	const handleClick = (): void => {
 		alert('Click Click!!!');
 	};
 
-  return (
-    <section className="ButtonsLayout">
-      <h1>Some Buttons</h1>
+	return (
+		<section className='ButtonsLayout'>
+			<h1>Some Buttons</h1>
 			<p>Defaults buttons, size: small & variant: text.</p>
 
 			<section className='ButtonsLayout-section'>
 				<section className='ButtonsLayout-section-box'>
 					<h2>Text Buttons</h2>
 					<p>Buttons size: large, upload: images & variant: text.</p>
-					<Button size='large' upload>UPLOAD</Button>
+					<Button size='large' upload>
+						UPLOAD
+					</Button>
 				</section>
 
 				<section className='ButtonsLayout-section-box'>
@@ -61,8 +62,8 @@ function ButtonsLayout(): JSX.Element {
 					</Button>
 				</section>
 			</section>
-    </section>
-  )
+		</section>
+	);
 }
 
-export default ButtonsLayout
+export default ButtonsLayout;
