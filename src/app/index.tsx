@@ -1,5 +1,5 @@
-import ButtonsLayout from "../layout/ButtonsLayout";
-import QrCardLayout from "../layout/QrCardLayout";
+import ButtonsLayout from '../layout/ButtonsLayout';
+import QrCardLayout from '../layout/QrCardLayout';
 
 function App(): JSX.Element {
 	return (

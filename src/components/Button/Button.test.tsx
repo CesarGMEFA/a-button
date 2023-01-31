@@ -13,13 +13,14 @@ import Button from '.';
 	- Confirm that button has the upload images function
 */
 describe('Button component', () => {
-
 	test('Component button into a document', () => {
 		// Given a button component
 		render(<Button>SEND</Button>);
 
 		// When a HTML button element with as element name as "SEND"
-		const button: HTMLButtonElement = screen.getByRole('button', { name: /send/i });
+		const button: HTMLButtonElement = screen.getByRole('button', {
+			name: /send/i,
+		});
 
 		// Then HTML button element must be in the document
 		expect(button).toBeInTheDocument();
@@ -30,7 +31,9 @@ describe('Button component', () => {
 		render(<Button>SEND</Button>);
 
 		// When a button with as element name as "SEND"
-		const button: HTMLButtonElement = screen.getByRole('button', { name: /send/i });
+		const button: HTMLButtonElement = screen.getByRole('button', {
+			name: /send/i,
+		});
 
 		// Then that the button is enabled
 		expect(button).toBeEnabled();
@@ -42,7 +45,9 @@ describe('Button component', () => {
 		render(<Button click={mockFn}>SEND</Button>);
 
 		// When a button with as element name as "SEND"
-		const button: HTMLButtonElement = screen.getByRole('button', { name: /send/i });
+		const button: HTMLButtonElement = screen.getByRole('button', {
+			name: /send/i,
+		});
 		fireEvent.click(button);
 
 		// Then the function be call one time
@@ -62,13 +67,12 @@ describe('Button component', () => {
 
 	test('Upload images option in button component', () => {
 		// Given a button component
-		render(<Button upload >Upload</Button>);
+		render(<Button upload>Upload</Button>);
 
 		// When a button has as aria-label a "upload image"
-		const inputImage: HTMLButtonElement = screen.getByTestId("Upload images");
+		const inputImage: HTMLButtonElement = screen.getByTestId('Upload images');
 
 		// Then input for images must be in the document
-		expect(inputImage).toBeInTheDocument()
-	})
-
+		expect(inputImage).toBeInTheDocument();
+	});
 });
